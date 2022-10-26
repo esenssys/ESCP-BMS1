@@ -24,16 +24,19 @@
 <p>Doc Ref</p>
 </blockquote></td>
 <td><blockquote>
-<p>ESS-243/080120/EXC-REV.01</p>
+<p>ESS-243/080120/EXC-REV.02</p>
 </blockquote></td>
 </tr>
 </tbody>
 </table>
 
-<img src="./media/f1.jpg"
-style="width:2.97829in;height:8.09458in" />
+<img src="./media/image1.png"
+style="width:4.01736in;height:2.82778in" />
 
-> DOCUMENT TRACKING TABLE
+**  
+**
+
+**DOCUMENT TRACKING TABLE**
 
 <table>
 <colgroup>
@@ -59,172 +62,121 @@ style="width:2.97829in;height:8.09458in" />
 <td><blockquote>
 <p>1</p>
 </blockquote></td>
-<td></td>
+<td><blockquote>
+<p>30/7/2019</p>
+</blockquote></td>
 <td><blockquote>
 <p>Initial version</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>2</p>
+</blockquote></td>
+<td><blockquote>
+<p>26/10/2022</p>
+</blockquote></td>
+<td><blockquote>
+<p>Cosmetic &amp; installation instructions corrected</p>
 </blockquote></td>
 </tr>
 </tbody>
 </table>
 
-1.  Data Readout GUI
+**  
+**
 
-    1.  # Software Installation
+# Data Readout GUI
 
-> To install the Pressure Sensor Evaluation Software:
+## Software Installation
+
+To install the Pressure Sensor Evaluation Software:
 
 - Run setup.exe (as administrator if possible) and follow the
   installation wizard.
 
 - Once the installation is complete run PSES.exe
 
-  1.  # Application Description
+## Application Description
 
+<img src="./media/image2.png"
+style="width:6.27986in;height:5.47986in" />
 
+| **\#** | **Description**             |
+|--------|-----------------------------|
+| 1      | Connection row              |
+| 2      | Device scan                 |
+| 3      | Data display                |
+| 4      | Open data graph window      |
+| 5      | Log file configuration      |
+| 6      | Evaluation Software version |
 
-<img src="./media/f2.jpg"
-style="width:7.61346in;height:7.48648in" />
+1\. Connection Row
 
-<table>
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 91%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>#</strong></th>
-<th><blockquote>
-<p><strong>Description</strong></p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td><blockquote>
-<p>Connection row</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td><blockquote>
-<p>Device scan</p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td><blockquote>
-<p>Data display</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td><blockquote>
-<p>Open data graph window</p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td><blockquote>
-<p>Log file configuration</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td><blockquote>
-<p>Evaluation Software version</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+Use the *Serial Port* dropdown box to select the COM port that
+corresponds to the Evaluation Kit and press the *Connect* button, which
+upon successful connection will change color and its text will now
+display *Disconnect*. Pressing *Disconnect* will stop communication with
+the Evaluation Kit. After connection with the kit is established, the
+software will automatically scan for connected devices (see Device Scan
+below). This can take a few seconds.
 
-1.  **Connection Row**
+2\. Device Scan
 
-> Use the *Serial Port* dropdown box to select the COM port that
-> corresponds to the Evaluation Kit and press the *Connect* button,
-> which upon successful connection will change color and its text will
-> now display *Disconnect*. Pressing *Disconnect* will stop
-> communication with the Evaluation Kit. After connection with the kit
-> is established the software will automatically scan for connected
-> devices (see Device Scan below). This can take a few seconds.
+The software scans for connected devices and displays the results in a
+table. The table columns indicate the channel number, an LED that goes
+green when a device is connected to the channel, the device’s serial
+number and the device’s I2C slave address (in hex). Device scan is
+performed automatically after successfully establishing a connection
+with the Evaluation Kit or can be manually started by pressing the *Scan
+Devices* button. The scan progress is indicated by a progress bar below
+the button. If a device is found on any channel the *Devices Connected*
+LED lights green.
 
-2.  **Device Scan**
+3\. Data display
 
-> The software scans for connected devices and displays the results in a
-> table. The table columns indicate the channel number, an LED that goes
-> green when a device is connected to the channel, the device’s serial
-> number and the device’s I<sup>2</sup>C slave address (in hex). Device
-> scan is performed automatically after successfully establishing a
-> connection with the Evaluation Kit or can be manually started by
-> pressing the *Scan Devices* button. The scan progress is indicated by
-> a progress bar below the button. If a device is found on any channel
-> the *Devices Connected* LED lights green.
+The received data values are displayed in this table, both the
+floating-point value for each measured quantity and the raw 16-bit
+hexadecimal value. The user can choose which device’s data is displayed
+by selecting the appropriate channel. The user can also choose the
+sample rate of the data. The minimum sample rate is 1ms. The same sample
+rate applies to the graphs and the *Log File*. The user can pause data
+acquisition at any time by pressing the *Stop Data Acquisition* button.
 
-3.  **Data display**
+4\. Open data graph window
 
-> The received data values are displayed in this table, both the
-> floating-point value for each measured quantity and the raw 16-bit
-> hexadecimal value. The user can choose which device’s data is
-> displayed by selecting the appropriate channel. The user can also
-> choose the sample rate of the data. The minimum sample rate is 1ms.
-> The same sample rate applies to the graphs and the *Log File*. The
-> user can pause data acquisition at any time by pressing the *Stop Data
-> Acquisition* button.
+Pressing the button will open the *Graph Window*
 
-4.  **Open data graph window**
+<img src="./media/image3.png"
+style="width:6.84583in;height:6.15208in" />
 
-> Pressing the button will open the *Graph Window*
+Using the drop-down menu (1) the user can select the quantity to
+display. By default, data for all connected sensors is displayed but the
+user can select/deselect any of them (2). The user can also zoom/pan the
+graph area using the respective buttons (3) and clear the graph area by
+pressing the *Clear History* button (4).
 
-><img src="./media/f3.jpg"
-style="width:7.61346in;height:6.48648in" />
+5\. Log File Configuration
 
-> Using the drop-down menu (1) the user can select the quantity to
-> display. By default, data for all connected sensors is displayed but
-> the user can select/deselect any of them (2). The user can also
-> zoom/pan the graph area using the respective buttons (3) and clear the
-> graph area by pressing the *Clear History* button (4).
+Optionally the user can log the received data to a file. Use the
+*Browse* button (folder icon) to select a directory and name for the log
+file and press the button to start logging. Pressing the button again
+will stop logging. Data is logged to the file at the rate specified in
+the Sample Rate textbox as tab delimited values. Measured quantities are
+written in the following order
 
-5.  **Log File Configuration**
+| **Pressure** | **Temperature** |
+|--------------|-----------------|
 
-> Optionally the user can log the received data to a file. Use the
-> *Browse* button (folder icon) to select a directory and name for the
-> log file and press the button to start logging. Pressing the button
-> again
+For each measured quantity we log its floating-point value with 6 digits
+of precision. An example is shown below:
 
-> will stop logging. Data is logged to the file at the rate specified in
-> the Sample Rate textbox as tab delimited values. Measured quantities
-> are written in the following order
+<img src="./media/image4.png"
+style="width:2.10417in;height:1.64583in" />
 
-<table>
-<colgroup>
-<col style="width: 42%" />
-<col style="width: 57%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><blockquote>
-<p><strong>Pressure</strong></p>
-</blockquote></th>
-<th><blockquote>
-<p><strong>Temperature</strong></p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+A log file for each serial number will be created storing the
+corresponding data.
 
-> For each measured quantity we log its floating-point value with 6
-> digits of precision. An example is shown below:
+6\. Evaluation Software Version
 
-><img src="./media/f4.jpg"
-style="width:7.61346in;height:4.48648in" />
-
-> **Figure 4: Data File format**
->
-> A log file for each serial number will be created storing the
-> corresponding data.
-
-6.  **Evaluation Software Version**
-
-> Displays the current version of the application
+Displays the current version of the application
