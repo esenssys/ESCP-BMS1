@@ -73,9 +73,6 @@ style="width:2.97829in;height:2.09458in" />
 
 > To install the Pressure Sensor Evaluation Software:
 
-- Extract the contents of the PSES.zip file and navigate to the “Volume”
-  folder.
-
 - Run setup.exe (as administrator if possible) and follow the
   installation wizard.
 
