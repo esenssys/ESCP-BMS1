@@ -31,7 +31,7 @@
 </table>
 
 <img src="./media/f1.jpg"
-style="width:2.97829in;height:2.09458in" />
+style="width:2.97829in;height:8.09458in" />
 
 > DOCUMENT TRACKING TABLE
 
