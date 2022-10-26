@@ -33,8 +33,7 @@
 <img src="./media/image1.png"
 style="width:4.01736in;height:2.82778in" />
 
-**  
-**
+
 
 **DOCUMENT TRACKING TABLE**
 
@@ -83,8 +82,7 @@ style="width:4.01736in;height:2.82778in" />
 </tbody>
 </table>
 
-**  
-**
+
 
 # Data Readout GUI
 
