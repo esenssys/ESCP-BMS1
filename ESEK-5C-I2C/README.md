@@ -24,35 +24,37 @@
 <p>Doc Ref</p>
 </blockquote></td>
 <td><blockquote>
-<p>ESS-243/080120/EXC-REV.02</p>
+<p>ESS-243/080120/EXC-REV.03</p>
 </blockquote></td>
 </tr>
 </tbody>
 </table>
 
-<img src="./media/image1.png"
-style="width:4.01736in;height:2.82778in" />
+<img src="./media/image1.emf" style="width:4.024in;height:2.81874in" />
 
-
+**  
+**
 
 **DOCUMENT TRACKING TABLE**
 
 <table>
 <colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 47%" />
 <col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 63%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th><blockquote>
 <p>Version</p>
 </blockquote></th>
-<th><blockquote>
-<p>Date</p>
-</blockquote></th>
+<th>Date</th>
 <th><blockquote>
 <p>Reason for change</p>
+</blockquote></th>
+<th><blockquote>
+<p>Author</p>
 </blockquote></th>
 </tr>
 </thead>
@@ -67,6 +69,9 @@ style="width:4.01736in;height:2.82778in" />
 <td><blockquote>
 <p>Initial version</p>
 </blockquote></td>
+<td><blockquote>
+<p>L. Voudouris</p>
+</blockquote></td>
 </tr>
 <tr class="even">
 <td><blockquote>
@@ -78,11 +83,50 @@ style="width:4.01736in;height:2.82778in" />
 <td><blockquote>
 <p>Cosmetic &amp; installation instructions corrected</p>
 </blockquote></td>
+<td><blockquote>
+<p>C. Papazachariou</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>3</p>
+</blockquote></td>
+<td><blockquote>
+<p>17/3/2023</p>
+</blockquote></td>
+<td><blockquote>
+<p>Timestamp feature on measurements file documented</p>
+</blockquote></td>
+<td><blockquote>
+<p>C. Papazachariou</p>
+</blockquote></td>
 </tr>
 </tbody>
 </table>
 
+**  
+**
 
+# Contents
+
+[1. Data Readout GUI [4](#data-readout-gui)](#data-readout-gui)
+
+[1.1 Software Installation
+[4](#software-installation)](#software-installation)
+
+[1.2 Application Description
+[4](#application-description)](#application-description)
+
+Table of Figures
+
+[Figure 1: UI explanation [4](#_Toc129961878)](#_Toc129961878)
+
+[Figure 2: Plots [6](#_Toc129961879)](#_Toc129961879)
+
+[Figure 3: Measuremets log file [7](#_Toc129961880)](#_Toc129961880)
+
+**  
+**
 
 # Data Readout GUI
 
@@ -98,7 +142,9 @@ To install the Pressure Sensor Evaluation Software:
 ## Application Description
 
 <img src="./media/image2.png"
-style="width:6.27986in;height:5.47986in" />
+style="width:6.84028in;height:5.77083in" />
+
+<span id="_Toc129961878" class="anchor"></span>Figure : UI explanation
 
 | **\#** | **Description**             |
 |--------|-----------------------------|
@@ -148,6 +194,8 @@ Pressing the button will open the *Graph Window*
 <img src="./media/image3.png"
 style="width:6.84583in;height:6.15208in" />
 
+<span id="_Toc129961879" class="anchor"></span>Figure : Plots
+
 Using the drop-down menu (1) the user can select the quantity to
 display. By default, data for all connected sensors is displayed but the
 user can select/deselect any of them (2). The user can also zoom/pan the
@@ -163,17 +211,28 @@ will stop logging. Data is logged to the file at the rate specified in
 the Sample Rate textbox as tab delimited values. Measured quantities are
 written in the following order
 
-| **Pressure** | **Temperature** |
-|--------------|-----------------|
+| **Pressure** | **Temperature** | **Reserved** | **Timestamp (optional)** |
+|--------------|-----------------|--------------|--------------------------|
 
 For each measured quantity we log its floating-point value with 6 digits
 of precision. An example is shown below:
 
-<img src="./media/image4.png"
-style="width:2.10417in;height:1.64583in" />
+<img src="./media/image4.png" style="width:5.82639in;height:1.51319in"
+alt="Text Description automatically generated with medium confidence" />
+
+<span id="_Toc129961880" class="anchor"></span>Figure : Measuremets log
+file
+
+The
 
 A log file for each serial number will be created storing the
 corresponding data.
+
+There is also a checkbox for optionally concatenating a timestamp
+(marked with red in the above example) at the end of each measurement
+line of the file with the following format:
+
+*Year-month-date_hour-minute-second.millisecond*
 
 6\. Evaluation Software Version
 
