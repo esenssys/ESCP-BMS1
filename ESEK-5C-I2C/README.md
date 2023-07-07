@@ -30,7 +30,7 @@
 </tbody>
 </table>
 
-<img src="./media/image1.emf" style="width:4.024in;height:2.81874in" />
+<img src="./.media/image1.png" style="width:4.024in;height:2.81874in" />
 
 **  
 **
@@ -141,7 +141,7 @@ To install the Pressure Sensor Evaluation Software:
 
 ## Application Description
 
-<img src="./media/image2.png"
+<img src="./.media/image2.png"
 style="width:6.84028in;height:5.77083in" />
 
 <span id="_Toc129961878" class="anchor"></span>Figure : UI explanation
@@ -191,7 +191,7 @@ acquisition at any time by pressing the *Stop Data Acquisition* button.
 
 Pressing the button will open the *Graph Window*
 
-<img src="./media/image3.png"
+<img src="./.media/image3.png"
 style="width:6.84583in;height:6.15208in" />
 
 <span id="_Toc129961879" class="anchor"></span>Figure : Plots
@@ -217,7 +217,7 @@ written in the following order
 For each measured quantity we log its floating-point value with 6 digits
 of precision. An example is shown below:
 
-<img src="./media/image4.png" style="width:5.82639in;height:1.51319in"
+<img src="./.media/image4.png" style="width:5.82639in;height:1.51319in"
 alt="Text Description automatically generated with medium confidence" />
 
 <span id="_Toc129961880" class="anchor"></span>Figure : Measuremets log
